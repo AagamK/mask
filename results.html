@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Document Masking Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #00bcd4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .container {
+            background-color: #e0f7fa;
+            border: 1px solid #00acc1;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #006064;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            margin-bottom: 20px;
+            border: 1px solid #00acc1;
+            border-radius: 4px;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #00796b;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Masked Document Preview</h1>
+        <iframe src="/static/masked_document.pdf"></iframe>
+        <a href="/static/masked_document.pdf" class="download-btn" download>Download Masked Document</a>
+    </div>
+</body>
+</html>
